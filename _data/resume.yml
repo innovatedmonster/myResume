@@ -39,7 +39,7 @@ main:
           - C++
           - Java
       - title: 个人技能总结
-        detail: 1. 掌握多种机器学习模型压缩算法，并能复现没有开源的论文以及在原有基础上做二次开发。如LSQ、AdaRound、AWQ、QIL、SmoothQuant(熟悉)等<br> &nbsp &nbsp
+        detail: 1. 掌握多种机器学习模型压缩算法，并能复现没有开源的论文以及在原有基础上做二次开发。如LSQ、AdaRound、QIL、AWQ、SmoothQuant(熟悉)等<br> &nbsp &nbsp
                 2. 有独立分析和改进模型量化算法的能力<br> &nbsp &nbsp
                 3. 工作认真负责、勇于担当、沟通和团队协作能力强；能力综合，有独立开发小项目的经验
         
