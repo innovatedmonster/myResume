@@ -26,41 +26,39 @@ main:
     content:
       - title: 中国石油大学（北京）
         duration: 2022年9月 - 2025年
-        sub: 硕士
-        detail: 计算机技术
-      - title: Your University
-        duration: Aug 2007 - Jun 2011
-        sub: Ut enim ad minim veniam
-        detail: Master Bachelor of Computer Science & Technology.
-  - type: skills
+        detail: 计算机技术硕士
+      - title: 中国石油大学（北京）
+        duration: 2018年9月 - 2022年6月
+        detail: 计算机科学与技术学士
+  - type: 技能
     content:
-      - title: 编程语言
+      - title: 技术栈和编程语言
         items:
+          - 模型量化
           - Python
           - C++
           - Java
-      - title: Skill Group
-        summary: Consectetur, Adipiscing, Elit
+      - title: 个人技能总结
+        list: 
+        - 1. 掌握多种机器学习模型压缩算法，并能复现没有开源的论文以及在原有基础上做二次开发。如LSQ、AdaRound、AWQ、QIL、SmoothQuant(熟悉)等
+        - 2. 有独立分析和改进模型量化算法的能力
+        - 3. 工作认真负责、勇于担当、沟通和团队协作能力强；能力综合，有独立开发小项目的经验
   - type: projects
     name: 项目经历
     content:
       - title: 复现QIL量化论文并实现QIL和DAQ量化的结合
         duration: 2024年1月 - 2024年1月
-        detail:
+        list:
           - 单一CNN量化方法效果有限，因此结合不同维度的方法QIL和DAQ方法以提高量化精度。
           - 分析QIL公式的本质，使用Straight Through
             Estimator(STE)对中心点和偏移点进行求导训练，并通过重写公式类解决阶段不可导问题，复现了QIL；替换qil的round为distance-aware
             soft rounding实现QIL和DAQ结合
           - 最后相对于QIL，QIL+DASR在8bit a/w量化下精度提高了0.02-2%
-        sub: 研究，复现和提升者
-      - title: Project Name
-        summary: Projects' introduction or summary
-        detail:
-          md: _data/demo.md
-        sub: Creator and maintainer.
+        sub: 研究和实现者
+        
       - title: 实现了简单加法分解量化方法
         duration: 2024年6月 - 2024年7月
-        detail:
+        list:
           - CNN新量化方法简单实验，因此想出一个新的简单方法以在低比特下达到高精度。
           - 将一个张量量化，然后对量化误差的相反数进行量化后相加，再次对新的量化误差做相同操作，于是得到量化后的张量。
           - 最后发现在w/a 2bit量化下相对于8 bit精度掉点不超过1%。这个方法的适用场景是少量数值导致小round误差，否则内存占用不小。
@@ -69,22 +67,20 @@ others:
   - type: others
     name: 其他
     content:
-      - 单行文字
-      - title: "加粗:"
-        text: 列表项二
-      - title: "兴趣:"
-        items:
-          - 睡觉
-          - 吃饭
-          - coding
-      - title: 列表
+    
+      - title: 奖项
         list:
-          - 第一项
-          - 第二项
+          - 2019年校二等奖学金
+          - 2022年校二等奖学金
+          
+      - title: "兴趣: "
+        items:
+          - 健身和长跑
+          - 羽毛球
 footer:
   print: null
   screen:
     - text: 简历脚注
-    - text: Made with &hearts; by NewFuture
-      href: https://github.com/NewFuture/CV/
+    - text: Made with &hearts; by Fuhai Liu
+      href: https://github.com/innovatedmonster/myResume/
 scripts: null
