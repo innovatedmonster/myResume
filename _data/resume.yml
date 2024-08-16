@@ -50,12 +50,12 @@ main:
         duration: 2024年1月 - 2024年1月
         detail: 1. 单一CNN量化方法效果有限，因此结合不同维度的方法QIL和DAQ方法以提高量化精度<br> &nbsp &nbsp
                 2. 分析QIL公式的本质，使用Straight Through Estimator(STE)对中心点和偏移点进行求导训练，并通过重写公式类解决截断函数不可导问题，复现了QIL；替换qil的round为distance-aware soft rounding实现QIL和DAQ结合<br> &nbsp &nbsp
-                3. 最后相对于QIL，QIL+DASR在8bit a/w量化下精度提高了0.02-2%
+                3. 最后复现QIL论文量化效果；相对于QIL，QIL+DASR在8bit a/w量化下精度提高了0.02-2%
         sub: 研究和实现者
         
       - title: 实现了简单加法分解量化方法
         duration: 2024年6月 - 2024年7月
-        detail: 1. 想出一个新的简单方法以在低比特下达到高精度，因此做实验验证<br> &nbsp &nbsp
+        detail: 1. 想出一个新的简单方法以在低比特量化下有较高准确率，因此做实验验证<br> &nbsp &nbsp
                 2. 将一个张量量化，然后对量化误差进行量化后相加，再次对新的量化误差做相同操作，于是得到量化后的张量<br> &nbsp &nbsp
                 3. 最后发现在w/a 2bit量化下相对于8 bit精度掉点不超过1%。这个方法的适用场景是少量数值导致小round误差，否则内存占用不小<br> &nbsp &nbsp
         sub: 研究和实现者
