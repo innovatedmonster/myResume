@@ -35,39 +35,30 @@ main:
       - title: 技术栈和编程语言
         items:
           - 模型量化
-          - SpringBoot
           - Python
           - C++
           - Java
       - title: 个人技能总结
         detail: 1. 掌握多种机器学习模型压缩算法，并能复现没有开源的论文以及在原有基础上做二次开发。如LSQ、AdaRound、QIL、AWQ、SmoothQuant(熟悉)等<br> &nbsp &nbsp
                 2. 有独立分析和改进模型量化算法的能力<br> &nbsp &nbsp
-                3. 能用SpringBoot框架进行网页开发<br> &nbsp &nbsp
-                4. 工作认真负责、勇于担当、沟通和团队协作能力强；能力综合，有独立开发小项目的经验
+                3. 工作认真负责、勇于担当、沟通和团队协作能力强；能力综合，有独立开发小项目的经验
         
   - type: projects
     name: 项目经历
     content:
       - title: 复现QIL量化论文并实现QIL和DAQ量化的结合
         duration: 2024年1月 - 2024年1月
-        tags:
-        - 模型量化
         detail: 1. 单一CNN量化方法效果有限，因此结合不同维度的方法QIL和DAQ方法以提高量化精度<br> &nbsp &nbsp
                 2. 分析QIL公式的本质，使用Straight Through Estimator(STE)对中心点和偏移点进行求导训练，并通过重写公式类解决截断函数不可导问题，复现了QIL；替换qil的round为distance-aware soft rounding实现QIL和DAQ结合<br> &nbsp &nbsp
                 3. 最后复现QIL论文量化效果；相对于QIL，QIL+DASR在8bit a/w量化下精度提高了0.02-2%
         sub: 研究和实现者
         
-      - title: 论坛项目
+      - title: 实现了简单加法分解量化方法
         duration: 2024年6月 - 2024年7月
-        tags:
-        - SpringBoot
-        - MyBatis
-        - jQuery
-        detail: 1. 搭建一个论坛，具有注册登录、第三方登录、发布和回复问题、点赞评论等功能<br> &nbsp &nbsp
-                2. 采用SpringMVC架构处理请求，业务处理，以及Thymeleaf模板引擎实现页面显示<br> &nbsp &nbsp
-                3. 基于jQuery和ajax实现和服务端异步传输数据来发送和校验验证码<br> &nbsp &nbsp
-                4. 基于MyBatis实现对数据库的增删改查
-        sub: 开发者
+        detail: 1. 想出一个新的简单方法以在低比特量化下有较高准确率，因此做实验验证<br> &nbsp &nbsp
+                2. 将一个张量量化，然后对量化误差进行量化后相加，再次对新的量化误差做相同操作，于是得到量化后的张量<br> &nbsp &nbsp
+                3. 最后发现在w/a 2bit量化下相对于8 bit精度掉点不超过1%。这个方法的适用场景是少量数值导致小round误差，否则内存占用不小<br> &nbsp &nbsp
+        sub: 研究和实现者
 others:
   - type: others
     name: 其他
