@@ -34,7 +34,7 @@ main:
     name: 成绩
     content:
       - title: 在校成绩
-        detail: 
+        detail:
           高等数学(下) 91分<br> &nbsp &nbsp
           高级学术英语 90分
       - title: 升学成绩
