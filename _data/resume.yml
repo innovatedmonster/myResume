@@ -35,11 +35,11 @@ main:
     content:
       - title: 在校成绩
         detail:
-          高等数学(下) 91分<br> &nbsp &nbsp
+          高等数学(下) 91分<br> &nbsp
           高级学术英语 90分
       - title: 升学成绩
         detail:
-          高考英语 135分<br> &nbsp &nbsp
+          高考英语 135分<br> &nbsp
           考研英语二 82分
 
   - type: projects
