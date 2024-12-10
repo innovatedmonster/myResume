@@ -30,10 +30,10 @@ main:
       - title: 中国石油大学（北京）
         duration: 2018年9月 - 2022年6月
         detail: 计算机科学与技术学士
-  - type: 技能
+  - type: others
     name: 成绩
     content:
-      - title: 在校成绩
+      - title: 在校成绩T
         list:
           - 高等数学(下) 91分
           - 高级学术英语 90分
