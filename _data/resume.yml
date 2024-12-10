@@ -30,7 +30,8 @@ main:
       - title: 中国石油大学（北京）
         duration: 2018年9月 - 2022年6月
         detail: 计算机科学与技术学士
-  - type: 课程成绩
+  - type: 技能
+    name: 成绩
     content:
       - title: 在校成绩
         list:
