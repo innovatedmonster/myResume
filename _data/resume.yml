@@ -31,9 +31,17 @@ main:
         duration: 2018年9月 - 2022年6月
         detail: 计算机科学与技术学士
   - type: others
+    name: 其他
+    content:
+    
+      - title: 奖项
+        list:
+          - 2019年校三等奖学金
+          - 2022年校二等奖学金
+  - type: others
     name: 成绩
     content:
-      - title: 在校成绩T
+      - title: 在校成绩a
         list:
           - 高等数学(下) 91分
           - 高级学术英语 90分
