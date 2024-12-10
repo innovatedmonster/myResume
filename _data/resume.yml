@@ -34,25 +34,14 @@ main:
     name: 成绩
     content:
       - title: 在校成绩
-        detail: 
-          - 高等数学(下) 91分
+        list: 
+          - 高等数学(下) 910分
           - 高级学术英语 90分
       - title: 升学成绩
         detail:
           - 高考英语 135分
           - 考研英语二 82分
-  - type: others
-    name: 成绩
-    content:
-      - title: test
-        list:
-          - 高等数学(下) 91分
-          - 高级学术英语 90分
-      - title: 升学成绩
-        list:
-          - 高考英语 135分
-          - 考研英语二 82分
-        
+
   - type: projects
     name: 实践经验
     content:
