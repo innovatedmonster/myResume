@@ -48,11 +48,6 @@ main:
     content:
 
       - title: 论坛项目
-      items:
-          - SpringBoot
-          - MyBatis
-          - JQuery
-          - Java
         duration: 2024年6月 - 2024年7月
         detail: 1. 搭建一个论坛，具有注册登录、第三方登录、发布和回复问题、点赞评论等功能<br> &nbsp &nbsp
                 2. 采用SpringMVC架构处理请求，业务处理，以及Thymeleaf模板引擎实现页面显示<br> &nbsp &nbsp
@@ -61,13 +56,17 @@ main:
         sub: 开发者
     
       - title: 复现QIL量化论文并实现QIL和DAQ量化的结合
-       items:
-          - 模型量化
-          - Python
         duration: 2024年1月 - 2024年1月
         detail: 1. 单一CNN量化方法效果有限，因此结合不同维度的方法QIL和DAQ方法以提高量化精度<br> &nbsp &nbsp
                 2. 分析QIL公式的本质，使用Straight Through Estimator(STE)对中心点和偏移点进行求导训练，并通过重写公式类解决截断函数不可导问题，复现了QIL；替换qil的round为distance-aware soft rounding实现QIL和DAQ结合<br> &nbsp &nbsp
                 3. 最后复现QIL论文量化效果；相对于QIL，QIL+DASR在8bit a/w量化下精度提高了0.02-2%
+        sub: 研究和实现者
+
+        - title: 面向离群点问题的奇异值分解量化方法
+        duration: 2024年3月 - 2024年5月
+        detail: 1. 经典量化方法对离群点问题的量化效果不理想，因此提出奇异值分解量化方法提高量化精度<br> &nbsp &nbsp
+                2. 利用奇异值分解将原张量分解成主成分张量和稀疏的离群点张量；采用迁移因子进一步迁移离群点到离群点张量中，从而降低离群点带来的重叠误差；采用BRECQ降低舍入误差<br> &nbsp &nbsp
+                3. 最后基于奇异值分解的量化方法，相对于近年量化算法在4bit a/w量化下精度提高了3%
         sub: 研究和实现者
         
 others:
