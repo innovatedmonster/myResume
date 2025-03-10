@@ -1,7 +1,7 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: 简历标题
+title: 我的简历
 lang: zh
 name: 刘付海
 jobtitle: ""
@@ -48,6 +48,11 @@ main:
     content:
 
       - title: 论坛项目
+      items:
+          - SpringBoot
+          - MyBatis
+          - JQuery
+          - Java
         duration: 2024年6月 - 2024年7月
         detail: 1. 搭建一个论坛，具有注册登录、第三方登录、发布和回复问题、点赞评论等功能<br> &nbsp &nbsp
                 2. 采用SpringMVC架构处理请求，业务处理，以及Thymeleaf模板引擎实现页面显示<br> &nbsp &nbsp
@@ -56,6 +61,9 @@ main:
         sub: 开发者
     
       - title: 复现QIL量化论文并实现QIL和DAQ量化的结合
+       items:
+          - 模型量化
+          - Python
         duration: 2024年1月 - 2024年1月
         detail: 1. 单一CNN量化方法效果有限，因此结合不同维度的方法QIL和DAQ方法以提高量化精度<br> &nbsp &nbsp
                 2. 分析QIL公式的本质，使用Straight Through Estimator(STE)对中心点和偏移点进行求导训练，并通过重写公式类解决截断函数不可导问题，复现了QIL；替换qil的round为distance-aware soft rounding实现QIL和DAQ结合<br> &nbsp &nbsp
