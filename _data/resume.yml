@@ -1,7 +1,7 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: 家教简历
+title: 简历标题
 lang: zh
 name: 刘付海
 jobtitle: ""
@@ -31,29 +31,37 @@ main:
         duration: 2018年9月 - 2022年6月
         detail: 计算机科学与技术学士
   - type: 技能
-    name: 成绩
     content:
-      - title: 在校成绩
-        detail:
-          高等数学(下) 91分<br> &nbsp &nbsp 
-          高级学术英语 90分
-      - title: 升学成绩
-        detail:
-          高考英语 135分<br> &nbsp &nbsp 
-          考研英语二 82分
-
-  - type: projects
-    name: 实践经验
-    content:
-      - title: 家教辅导
-        duration: 2019年9月 - 今天
-        detail: 具有丰富线上和线下的教学英语，数学经验，曾给多个孩子补习功课，对考点把握准确，专业知识扎实，功底深厚。<br> &nbsp &nbsp对于绝大多数语数英成绩不太好的孩子，要有针对性的补基础，了解具体哪一块没有学好，从薄弱处出发，并且从孩子的家庭作业入手，发现孩子的弱点，帮助学生熟悉常见的题型及常见的解题技巧，另外计算能力很关键，平时要多练习。<br> &nbsp &nbsp最后也要了解孩子平时的学习习惯，给一些建议。如果孩子的语数英成绩还不错，基础比较扎实，我会从语数英思想上引导孩子多归纳总结，内化知识，而不是一味的刷题，浪费时间效率也不高。
-        sub: 家教
+      - title: 技术栈和编程语言
+        items:
+          - 模型量化
+          - Python
+          - C++
+          - Java
+      - title: 个人技能总结
+        detail: 1. 掌握多种机器学习模型压缩算法，并能复现没有开源的论文以及在原有基础上做二次开发。如LSQ、AdaRound、QIL、AWQ、SmoothQuant(熟悉)等<br> &nbsp &nbsp
+                2. 有独立分析和改进模型量化算法的能力<br> &nbsp &nbsp
+                3. 工作认真负责、勇于担当、沟通和团队协作能力强；能力综合，有独立开发小项目的经验
         
-      - title: python助教
-        duration: 2022年10月 - 2023年1月
-        detail: 课上帮助老师教本科学生如何学习python,并在课下进行课后答疑，耐心讲解，最后成功帮助一个班级通过python课程的期末考试并学会用python进行简单的数据处理、爬虫。<br> &nbsp &nbsp擅长用通俗易懂的方式教学，让学生快速掌握知识；且能因此施教，有针对性地给不同本科生教学。
-        sub: 助教
+  - type: projects
+    name: 项目经历
+    content:
+
+      - title: 论坛项目
+        duration: 2024年6月 - 2024年7月
+        detail: 1. 搭建一个论坛，具有注册登录、第三方登录、发布和回复问题、点赞评论等功能<br> &nbsp &nbsp
+                2. 采用SpringMVC架构处理请求，业务处理，以及Thymeleaf模板引擎实现页面显示<br> &nbsp &nbsp
+                3. 基于jQuery和ajax实现和服务端异步传输数据来发送和校验验证码<br> &nbsp &nbsp
+                4. 基于MyBatis实现对数据库的增删改查<br> &nbsp &nbsp
+        sub: 开发者
+    
+      - title: 复现QIL量化论文并实现QIL和DAQ量化的结合
+        duration: 2024年1月 - 2024年1月
+        detail: 1. 单一CNN量化方法效果有限，因此结合不同维度的方法QIL和DAQ方法以提高量化精度<br> &nbsp &nbsp
+                2. 分析QIL公式的本质，使用Straight Through Estimator(STE)对中心点和偏移点进行求导训练，并通过重写公式类解决截断函数不可导问题，复现了QIL；替换qil的round为distance-aware soft rounding实现QIL和DAQ结合<br> &nbsp &nbsp
+                3. 最后复现QIL论文量化效果；相对于QIL，QIL+DASR在8bit a/w量化下精度提高了0.02-2%
+        sub: 研究和实现者
+        
 others:
   - type: others
     name: 其他
@@ -61,12 +69,8 @@ others:
     
       - title: 奖项
         list:
-          - 2013年茂名市第十三中学男子1500米、1000米、800米第一名
-          - 2018年地球物理与信息工程学院新生辩论赛一等奖
-          - 2018年地球物理与信息工程学院新生辩论赛最佳辩手
-          - 2018年中国石油大学（北京）秋季学生运动会男子1500米第四名
+          - 2019年校三等奖学金
           - 2022年校二等奖学金
-          
 
       - title: "外语: "
         items:
@@ -74,9 +78,8 @@ others:
           
       - title: "兴趣: "
         items:
-          - 徒手健身
+          - 健身和长跑
           - 羽毛球
-          - 长跑
 footer:
   print: null
   screen:
